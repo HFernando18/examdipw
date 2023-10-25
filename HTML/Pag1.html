@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones de Libros</title>
+    <link rel="shortcut icon" href="../Img/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/headerfooter.css"/>
+    <link rel="stylesheet" href="../CSS/Libros/paglib.css"/>
+</head>
+<body>
+    <header>
+        <a href="../HTML/Proyect_f.html"><img src="../Img/logop.png" id="logop" title="Retornar a página principal"></a>
+        <div class="separator"></div>
+        <h1>Recomendaciones de Libros</h1>
+    </header>
+
+    <div id="libros">
+        <!-- Libro 1 -->
+        <div class="popup-image-container" onclick="mostrarPopup('La llamada de la selva', 'Jack London.', 'Originalmente publicada en 1903. 1', 'O tambien ´´El llamado de la selva´´, es una novela de aventuras que presenta una narrativa envolvente y emocionante. A través de la travesía de Buck, un perro doméstico convertido en perro de trineo, se exploran temas de supervivencia, libertad y la lucha por adaptarse en un ambiente hostil. La habilidad de Jack London para transmitir las emociones y la naturaleza salvaje del Yukón hacen que esta novela sea una experiencia inolvidable para el lector, sumergiéndolo en un mundo de acción y emociones a lo largo de cada página.')">
+            <img src="../Img/Libros/libro1.jpg" alt="Libro 1">
+            <h3 class="image-title">La llamada de la selva</h3>
+        </div>
+        <!-- Libro 2 -->
+        <div class="popup-image-container" onclick="mostrarPopup('Cien años de soledad', 'Gabriel García Márquez.', 'Originalmente publicada en 1967.', 'Cien años de soledad, es un hito en la literatura latinoamericana y una epopeya familiar que abarca generaciones. La prosa poética de Gabriel García Márquez crea un universo mágico y realista a la vez, lleno de personajes inolvidables y sucesos sorprendentes. La obra explora temas universales como el tiempo, la memoria, la soledad y el destino, mientras retrata la historia de la familia Buendía y su pueblo, Macondo. Esta novela es una joya literaria que transporta al lector a un mundo enigmático y poético.')">
+            <img src="../Img/Libros/libro2.jpg" alt="Libro 2">
+            <h3 class="image-title">Cien años de soledad</h3>
+        </div>
+        <!-- Libro 3 -->
+        <div class="popup-image-container" onclick="mostrarPopup('El extranjero', 'Albert Camus.', 'Originalmente publicada en 1942.', 'El extranjero, es una novela filosófica y existencial que plantea preguntas profundas sobre el sentido de la vida y la naturaleza humana. A través del protagonista, Meursault, quien enfrenta la vida con indiferencia y alienación, Albert Camus examina la absurdidad de la existencia y la lucha entre el individuo y la sociedad. La narrativa sencilla y desapegada refuerza la sensación de extrañeza y reflexión en el lector, haciéndole cuestionar sus propias percepciones del mundo.')">
+            <img src="../Img/Libros/libro3.jpg" alt="Libro 3">
+            <h3 class="image-title">El extranjero</h3>
+        </div>
+        <!-- Libro 4 -->
+        <div class="popup-image-container" onclick="mostrarPopup('La sombra del viento', 'Carlos Ruiz Zafón.', 'Originalmente publicada en 2001.', 'La sombra del viento, es una novela cautivadora que combina el misterio, el romance y la historia en una trama fascinante. Carlos Ruiz Zafón crea un retrato vívido de la Barcelona de posguerra y sumerge al lector en un laberinto de secretos y revelaciones. La prosa poética y evocadora te atrapa desde las primeras páginas y te lleva a través de una aventura literaria llena de intriga y misterio mientras descubres los enigmas que rodean el libro maldito de Julián Carax. Esta novela es un tributo apasionado al poder de los libros y al arte de la narrativa.')">
+            <img src="../Img/Libros/libro4.jpg" alt="Libro 4">
+            <h3 class="image-title">La sombra del viento</h3>
+        </div>
+        <!-- Libro 5 -->
+        <div class="popup-image-container" onclick="mostrarPopup('El resplandor', 'Stephen King', 'Originalmente publicada en 1977.', 'El resplandor, es un clásico del terror psicológico que muestra la capacidad de Stephen King para crear una atmósfera inquietante y personajes vívidos. La novela explora la lenta caída a la locura del personaje principal, Jack Torrance, mientras se enfrenta a las fuerzas sobrenaturales y los oscuros secretos del Hotel Overlook. King construye una tensión creciente a medida que los horrores del hotel y la batalla interna de Jack se entrelazan en un clímax terrorífico. Esta novela es una inmersión inolvidable en los abismos de la mente humana y una experiencia espeluznante para los amantes del terror.')">
+            <img src="../Img/Libros/libro5.jpg" alt="Libro 5">
+            <h3 class="image-title">El resplandor</h3>
+        </div>
+        <!-- Libro 6 -->
+        <div class="popup-image-container" onclick="mostrarPopup('El cuervo', 'Edgar Allan Poe', 'Originalmente publicada en 1845.', 'El cuervo es uno de los trabajos más conocidos y celebrados de Edgar Allan Poe, y es un poema oscuro y melancólico que explora temas de dolor, pérdida y desesperación. La narración lírica y evocadora de Poe crea una atmósfera sombría y misteriosa que atrapa al lector desde el inicio. El uso del cuervo como símbolo de la inmortalidad y la fatalidad se convierte en una obsesión para el narrador, intensificando la sensación de angustia y pesadumbre. Este poema es un logro destacado en la poesía gótica y refleja la habilidad de Poe para evocar emociones profundas a través de su escritura.')">
+            <img src="../Img/Libros/libro6.jpg" alt="Libro 6">
+            <h3 class="image-title">El cuervo</h3>
+        </div>
+    </div>
+
+    <div class="popup-overlay" onclick="cerrarPopup()"></div>
+
+
+    <div id="popup" class="popup">
+        <span class="close-btn" onclick="cerrarPopup()">&times;</span>
+        <h2 id="titulo"></h2>
+        <p id="autor"></p>
+        <p id="fecha"></p>
+        <p id="razon"></p>
+    </div>
+
+    <footer>
+        <section>
+            <a href="#logop">Ir al comienzo</a>
+            <p>Si posees alguna sugerencia, <a href="mailto:opinion@screenverse.com">contáctanos</a>.</p>
+        </section>
+        <p>Screeniverse 2023</p>
+    </footer>
+
+    <script src="../JavaScript/jslibros.js"></script>
+</body>
+</html>

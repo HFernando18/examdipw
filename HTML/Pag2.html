@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones de Películas</title>
+    <link rel="shortcut icon" href="../Img/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/headerfooter.css"/>
+    <link rel="stylesheet" href="../CSS/Peliculas/peli.css"/>
+</head>
+<body>
+    <header id="principio">
+        <a href="Proyect_f.html"><img src="../Img/logop.png" id="logop" title="Retornar a página principal"></a>
+        <div class="separator"></div>
+        <h1>Recomendaciones de Películas</h1>
+    </header>
+
+    <!-- Imágenes de recomendaciones de películas -->
+    <div id="peliculas">
+        <!-- Película 1 -->
+        <div class="popup-image-container" onclick="mostrarPopup('Forrest Gump', 'Robert Zemeckis', '06 de julio de 1984', 'Si estás buscando una película que sea inspiradora, divertida, conmovedora y bien hecha, Forrest Gump es una gran opción. Esta es una historia inspiradora que trata de superación personal, además de divertida con muchas escenas memorables. Con temas como el amor, la pérdida y la amistad, sin duda alguna, es una película que te hará reir, llorar y pensar.', 'https://www.youtube.com/embed/bLvqoHBptjg')">
+            <img src="../Img/Peliculas/peli1.jpg" alt="Película 1">
+            <h3 class="image-title">Forrest Gump</h3>
+        </div>
+        <!-- Película 2 -->
+        <div class="popup-image-container" onclick="mostrarPopup('Wall-E', 'Andrew Stanton', '27 de junio del 2008', 'Wall-E es una película bellamente animada con una historia conmovedora. La película explora temas como el amor, la amistad, el medio ambiente y el futuro de la humanidad. Wall-E es una película que es a la vez divertida y conmovedora, y que seguramente te exhortará a reflexionar. Posee una historia interesante y que te hará pensar sobre el cuidado del medio ambiente, el futuro de la humanidad y la importancia que puede poseer una pequeña planta.', 'https://www.youtube.com/embed/IYPe2oWBV_w')">
+            <img src="../Img/Peliculas/peli2.jpg" alt="Película 2">
+            <h3 class="image-title">Wall-E</h3>
+        </div>
+        <!-- Película 3 -->
+        <div class="popup-image-container" onclick="mostrarPopup('Rescatando al soldado Ryan', 'Steven Spielberg', '24 de julio de 1998', 'Rescatando al soldado Ryan es una película realista y visceral que ofrece una visión cruda de la guerra. La película está llena de acción, suspenso y emoción, y cuenta con algunas de las secuencias de batalla más impresionantes jamás filmadas. La película trata de un grupo de soldados estadounidenses que son enviados a una misión para rescatar a un soldado llamado James Francis Ryan (Damon) y, también es un poderoso homenaje a los soldados que lucharon y murieron en la Segunda Guerra Mundial.', 'https://www.youtube.com/embed/9CiW_DgxCnQ')">
+            <img src="../Img/Peliculas/peli3.jpg" alt="Película 3">
+            <h3 class="image-title">Rescatando al soldado Ryan</h3>
+        </div>
+        <!-- Película 4 -->
+        <div class="popup-image-container" onclick="mostrarPopup('La razón de estar contigo', 'Lasse Hallström', '27 de enero del 2017', 'La razón de estar contigo es una película de comedia dramática que cuenta la historia de un perro llamado Bailey, quien ha vivido varias vidas y ha aprendido el significado del amor y la amistad. La recomendamos demasiado por su calidad de historia y mensaje, sin duda, la película es un recordatorio de que la vida es preciosa y que debemos apreciar cada momento que tenemos.', 'https://www.youtube.com/embed/t0vbLxwIDv8')">
+            <img src="../Img/Peliculas/peli4.jpg" alt="Película 4">
+            <h3 class="image-title">La razón de estar contigo</h3>
+        </div>
+        <!-- Película 5 -->
+        <div class="popup-image-container" onclick="mostrarPopup('En busca de la felicidad', 'Gabriele Muccino', '15 de diciembre del 2006', 'Es una película que seguramente te hará llorar y reír. La película sigue a Gardner mientras lucha por mantener a su hijo, Christopher Jr. (Jaden Smith), mientras intenta establecer una empresa de escáneres de densidad ósea portátiles. Recomendamos esta película por su historia llena de esperanza y su ritmo que te centra en no dejar de verla. Además, la película fue un éxito de crítica y comercial, recaudando más de $374 millones en todo el mundo. Fue nominada a dos premios Oscar: Mejor Actor (Will Smith) y Mejor Guion Original (Steven Conrad).', 'https://www.youtube.com/embed/rxtGMH7OrLc')">
+            <img src="../Img/Peliculas/peli5.jpg" alt="Película 5">
+            <h3 class="image-title">En busca de la felicidad</h3>
+        </div>
+        <!-- Película 6 -->
+        <div class="popup-image-container" onclick="mostrarPopup('Como ser un Latin Lover', 'Ken Marino', '28 de abril del 2017', 'La película está protagonizada por Eugenio Derbez como Maximo, un ex gigoló que se ve obligado a mudarse con su hermana, Sara, cuando su esposa de 40 años lo deja por un hombre más joven. Los actores que interpretan a los personajes principales poseen una excelente actuación y su historia es divertida y conmovedora, en donde se explora la importancia de la familia, además de que expresa el talento que posee América Latina.', 'https://www.youtube.com/embed/8pwYYAUTEOk')">
+            <img src="../Img/Peliculas/peli6.jpg" alt="Película 6">
+            <h3 class="image-title">Como ser un Latin Lover</h3>
+        </div>
+    </div>
+
+    <!-- Fondo oscuro -->
+    <div class="popup-overlay" onclick="cerrarPopup()"></div>
+
+    <!-- Ventana emergente -->
+    <div id="popup" class="popup">
+        <span class="close-btn" onclick="cerrarPopup()">&times;</span>
+        <div id="video-container"></div>
+        <h2 id="titulo"></h2>
+        <p id="autor"></p>
+        <p id="fecha"></p>
+        <p id="razon"></p>
+    </div>
+
+    <footer>
+        <section>
+            <a href="#principio">Ir al comienzo</a>
+            <p>Si posees alguna sugerencia, <a href="mailto:opinion@screenverse.com">contáctanos</a>.</p>
+        </section>
+        <p>Screeniverse Copyright 2023</p>
+    </footer>
+
+    <script src="../JavaScript/emergente.js"></script>
+</body>
+</html>

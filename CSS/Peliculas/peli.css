@@ -1,0 +1,88 @@
+ /* Estilos para la ventana emergente y el fondo oscuro */
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    pointer-events: none;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    border-radius: 25px;
+}
+.popup.show {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup img {
+    max-width: 100%;
+}
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+}
+/* Mostrar el fondo oscuro y el popup con animación */
+.popup-overlay.show {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+/* Organizar imágenes en 2 filas y 3 columnas */
+#peliculas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+#peliculas .popup-image-container {
+    text-align: center;
+    cursor: pointer;
+}
+#peliculas img {
+    max-width: 100%;
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Ajustar las imágenes al tamaño del contenedor sin deformar */
+    border-radius: 5px;
+}
+#peliculas h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* Estilos para el iframe del video de YouTube */
+#popup iframe {
+    width: 450px;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    border-radius: 15px;
+}

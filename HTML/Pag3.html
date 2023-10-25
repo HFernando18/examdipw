@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones de Anime</title>
+    <link rel="shortcut icon" href="../Img/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/headerfooter.css"/>
+    <link rel="stylesheet" href="../CSS/Anime/A-style.css"/>
+</head>
+<body>
+    <header id="principio">
+        <a href="../HTML/Proyect_f.html"><img src="../Img/logop.png" id="logop" title="Retornar a página principal"></a>
+        <div class="separator"></div>
+        <h1>Recomendaciones de Anime</h1>
+    </header>
+
+    <div id="anime">
+        <!-- Anime 1 -->
+        <div class="popup-image-container" onclick="mostrarPopup('Naruto', 'Masashi Kishimoto', '3 de octubre de 2002 a 8 de febrero de 2007 (Naruto), 15 de febrero de 2007 a 23 de marzo de 2017 (Naruto Shippuden).', 'Naruto es un anime de aventuras y acción que sigue la historia de Naruto Uzumaki, un joven ninja con el sueño de convertirse en el Hokage, el líder de su aldea. La serie ofrece una combinación emocionante de batallas épicas, amistad y superación personal. Además, presenta una amplia gama de personajes memorables y una trama llena de giros y sorpresas.', 'https://www.youtube.com/embed/gM0XmG1pjBI')">
+            <img src="../Img/Anime/anime1.jpg" alt="Naruto">
+            <h3 class="image-title">Naruto</h3>
+        </div>
+        <!-- Anime 2 -->
+        <div class="popup-image-container" onclick="mostrarPopup('One Piece', 'Eiichiro Oda', '20 de octubre de 1999 (en curso).', 'One Piece es un anime de aventuras y piratas que sigue las emocionantes y cómicas aventuras de Monkey D. Luffy y su tripulación en busca del legendario tesoro ´´One Piece´´. La serie es conocida por su vasto mundo, personajes carismáticos y batallas épicas. Su sentido del humor y emocionantes arcos argumentales hacen que sea una opción increíblemente entretenida.', 'https://www.youtube.com/embed/s-MYZfFqmx0')">
+            <img src="../Img/Anime/anime2.jpg" alt="One Piece">
+            <h3 class="image-title">One Piece</h3>
+        </div>
+        <!-- Anime 3 -->
+        <div class="popup-image-container" onclick="mostrarPopup('Attack on Titan', 'Hajime Isayama', '7 de abril de 2013 a 28 de septiembre de 2013 (Temporada 1), 1 de abril de 2017 a 17 de junio de 2017 (Temporada 2), 22 de julio de 2018 a 30 de junio de 2019 (Temporada 3), 7 de diciembre de 2020 a 28 de marzo de 2021 (Temporada 4).', 'Attack on Titan es un anime de acción y fantasía oscura que se desarrolla en un mundo donde la humanidad está al borde de la extinción debido a los gigantes humanoides llamados Titanes. La serie es intensa, emocionante y llena de misterios y revelaciones sorprendentes. Su trama compleja y personajes complejos hacen que sea una experiencia de visualización emocionante y absorbente.', 'https://www.youtube.com/embed/MGRm4IzK1SQ')">
+            <img src="../Img/Anime/anime3.jpg" alt="Attack on Titan">
+            <h3 class="image-title">Attack on Titan</h3>
+        </div>
+        <!-- Anime 4 -->
+        <div class="popup-image-container" onclick="mostrarPopup('Parasyte', 'Hitoshi Iwaaki', '9 de octubre de 2014 a 26 de marzo de 2015.', 'Parasyte es un anime de ciencia ficción y horror que sigue la vida de Shinichi Izumi, cuyo brazo es invadido por un parásito alienígena. La serie explora temas de identidad, moralidad y la lucha por la supervivencia. La combinación de acción, drama y tensión psicológica lo convierten en un anime apasionante y conmovedor.', 'https://www.youtube.com/embed/XIkxx3JRt-U')">
+            <img src="../Img/Anime/anime4.jpg" alt="Parasyte">
+            <h3 class="image-title">Parasyte</h3>
+        </div>
+        <!-- Anime 5 -->
+        <div class="popup-image-container" onclick="mostrarPopup('Demon Slayer', 'Koyoharu Gotouge', '6 de abril de 2019 a 28 de septiembre de 2019.', 'Demon Slayer es un anime de acción y fantasía que sigue la historia de Tanjiro Kamado, un joven cazador de demonios que busca vengar la muerte de su familia y devolver a su hermana Nezuko a la normalidad después de convertirse en un demonio. El anime destaca por su impresionante animación, personajes carismáticos y emocionantes escenas de combate.', 'https://www.youtube.com/embed/VQGCKyvzIM4')">
+            <img src="../Img/Anime/anime5.jpg" alt="Demon Slayer">
+            <h3 class="image-title">Demon Slayer</h3>
+        </div>
+        <!-- Anime 6 -->
+        <div class="popup-image-container" onclick="mostrarPopup('Sword Art Online', 'Reki Kawahara', ' 8 de julio de 2012 (Primera temporada).', 'Sword Art Online es un anime de acción y aventuras que presenta una fascinante mezcla de realidad virtual y mundos de fantasía. Los jugadores quedan atrapados en el mundo del juego y deben luchar para sobrevivir y salir. El anime explora temas de amistad, amor y la línea borrosa entre la realidad y la fantasía. Además, ofrece emocionantes batallas y una narrativa cautivadora.', 'https://www.youtube.com/embed/BUru_H_mB-w')">
+            <img src="../Img/Anime/anime6.jpg" alt="Sword Art Online">
+            <h3 class="image-title">Sword Art Online</h3>
+        </div>
+    </div>
+
+
+    <div class="popup-overlay" onclick="cerrarPopup()"></div>
+
+
+    <div id="popup" class="popup">
+        <span class="close-btn" onclick="cerrarPopup()">&times;</span>
+        <div id="video-container"></div>
+        <h2 id="titulo"></h2>
+        <p id="autor"></p>
+        <p id="fecha"></p>
+        <p id="razon"></p>
+    </div>
+
+    <footer>
+        <section>
+            <a href="#principio">Ir al comienzo</a>
+            <p>Si posees alguna sugerencia, <a href="mailto:opinion@screenverse.com">contáctanos</a>.</p>
+        </section>
+        <p>Screeniverse Copyright 2023</p>
+    </footer>
+
+    <script src="../JavaScript/animefuntion.js"></script>
+</body>
+</html>

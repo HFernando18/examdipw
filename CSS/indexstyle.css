@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+
+    background-position: center;
+}
+header {
+    background-color: black;
+    padding: 15px;
+    position:relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+#container {
+    align-self: center;
+
+
+}
+a img {
+    width: 180px;
+}
+#principal {  
+    width: 400px;
+    margin: 0 auto;
+
+}
+#principal .sub {
+    background-color: rgba(255, 51, 0, 0.482);
+    margin: 7rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    
+}
+#principal .sub {
+    box-shadow: 0 0.1rem 0.4rem black ;
+}
+#principal .sub h1  {
+    margin: 1rem;
+    text-align: center;
+}
+#principal .sub h2 {
+    margin: 1rem;
+    text-align: center;
+    color: white;
+}
+#principal .sub p {
+    margin: 1rem;
+    text-align: center;
+}
+#boton {
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.4rem black ;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid black;
+    
+}
+#boton, #enlace {
+    text-decoration: none !important;
+}
+#boton:hover {
+    background-color: gray;
+}
+
+

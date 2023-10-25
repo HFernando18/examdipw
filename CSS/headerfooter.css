@@ -1,0 +1,61 @@
+/* HEADER */
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    margin: 0;
+    background-color: #efefefb6;
+}
+header {
+    background-color: rgb(206, 66, 66);
+    padding: 15px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 70px;
+    display: flex;
+    justify-content: right;
+
+}
+header h1 {
+    padding-top: 18px;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.separator {
+    width: 4.5px;
+    height: 160px;
+    background-color: #000;
+    margin: 8px 10px;
+  }
+
+#logop {
+    width: 450px; 
+    height: auto;
+    padding: 5%;
+    margin: 2%;
+    position: relative; 
+    right: 50px;
+  }
+/* FOOTER */
+footer {
+    background-color: black;
+    padding: 3rem;
+    color:white;
+}
+footer section{
+    float: right;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: blue;
+}
